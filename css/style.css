@@ -125,11 +125,9 @@ nav {
 .menu__list > li {
   padding: 1rem 0;
 }
-.navbar__menu a.shop-name {
-  display: inline-block;
-  font-size: 4rem;
-  font-weight: bold;
-  color: var(--colorPrimary);
+.navbar__menu img.shop-name {
+  width: 10%;
+  height: 5%;
 }
 .fa-bars,
 .shopping-cart-icon {
