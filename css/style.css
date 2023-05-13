@@ -90,6 +90,11 @@ body ::-webkit-scrollbar-thumb {
   background-color: var(--mainWhite);
   color: var(--colorPrimary);
 }
+.btn-remove{
+  color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+
+}
 
 /* ================== navbar ============================= */
 nav {
@@ -1229,6 +1234,9 @@ nav {
   cursor: pointer;
   text-transform: uppercase;
 }
+.toRemove{
+color: red;
+}
 /* --- product card------ */
 .product-card {
   flex-grow: 1;
@@ -1561,6 +1569,7 @@ nav {
 .shop-single-description .quantity .btn {
   padding: 0;
   font-size: 0.8rem;
+  color
 }
 .shop-single-description .quantity .btn i {
   padding: 1rem 1.5rem;
