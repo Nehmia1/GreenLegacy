@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+
 }
 :root {
   --colorPrimary: #59ab6e;
@@ -23,6 +26,7 @@
 }
 
 html {
+  font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
 }
 body {
@@ -122,6 +126,7 @@ nav {
   transition: all 0.4s ease;
 }
 .navbar__menu a {
+  font-size: 20px;
   display: block;
   text-decoration: none;
   padding: 1rem;
@@ -131,8 +136,9 @@ nav {
   padding: 1rem 0;
 }
 .navbar__menu img.shop-name {
-  width: 10%;
-  height: 5%;
+  width: 180px;
+  height: 180px;
+  margin-left: -40px;
 }
 .fa-bars,
 .shopping-cart-icon {
@@ -529,11 +535,13 @@ nav {
   opacity: 0.9;
 }
 .hero-banner__text h2 {
+  font-size: 60px;
   font-weight: lighter;
   color: var(--colorPrimary);
 }
 .hero-banner__text h3,
 .hero-banner__text p {
+  font-size: 16px;
   padding-left: 0.5rem;
 }
 
@@ -664,12 +672,14 @@ nav {
 }
 .header-categories h2,
 .header-featured h2 {
+  font-size: 40px;
   font-weight: lighter;
   letter-spacing: 0.12rem;
   margin-bottom: 1rem;
 }
 .header-categories p,
 .header-featured p {
+  font-size: 16px;
   max-width: 500px;
 }
 .body-categories,
@@ -763,6 +773,7 @@ nav {
   .product-categories,
   .featured-product {
     max-width: 300px;
+    height: 450px;
   }
   .details-featured {
     min-height: 200px;
@@ -1075,6 +1086,7 @@ nav {
   width: 100%;
 }
 .body-contact label {
+  font-size: 20px;
   width: max-content;
   margin-bottom: 0.5rem;
 }
@@ -1156,7 +1168,7 @@ nav {
 .sale-categories,
 .type-categories {
   margin-bottom: 0.7rem;
-  background-color: #eeeeee3b;
+  background-color: #ffffff;
   padding: 0.5rem;
 }
 .categories-filter h2 {
