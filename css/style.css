@@ -90,6 +90,11 @@ body ::-webkit-scrollbar-thumb {
   background-color: var(--mainWhite);
   color: var(--colorPrimary);
 }
+.btn-remove{
+  color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+
+}
 
 /* ================== navbar ============================= */
 nav {
@@ -125,11 +130,9 @@ nav {
 .menu__list > li {
   padding: 1rem 0;
 }
-.navbar__menu a.shop-name {
-  display: inline-block;
-  font-size: 4rem;
-  font-weight: bold;
-  color: var(--colorPrimary);
+.navbar__menu img.shop-name {
+  width: 10%;
+  height: 5%;
 }
 .fa-bars,
 .shopping-cart-icon {
@@ -1231,6 +1234,9 @@ nav {
   cursor: pointer;
   text-transform: uppercase;
 }
+.toRemove{
+color: red;
+}
 /* --- product card------ */
 .product-card {
   flex-grow: 1;
@@ -1563,6 +1569,7 @@ nav {
 .shop-single-description .quantity .btn {
   padding: 0;
   font-size: 0.8rem;
+  color
 }
 .shop-single-description .quantity .btn i {
   padding: 1rem 1.5rem;

@@ -55,9 +55,9 @@ export class ShoppingCartApi {
 
     Menu.displayShoppingCart();
     const pathname = window.location.pathname;
-    if (pathname === "/zay-shop-demo/buy.html") {
+    if (pathname === "/GreenLegacy/buy.html") {
       Ui.displayBuyPage();
-    } else if (pathname === "/zay-shop-demo/shopSingle.html") {
+    } else if (pathname === "/GreenLegacy/shopSingle.html") {
       Ui.displaySingleShop();
     }
   }
@@ -69,9 +69,9 @@ export class ShoppingCartApi {
 
     Menu.displayShoppingCart();
     const pathname = window.location.pathname;
-    if (pathname === "/zay-shop-demo/buy.html") {
+    if (pathname === "/GreenLegacy/buy.html") {
       Ui.displayBuyPage();
-    } else if (pathname === "/zay-shop-demo/shopSingle.html") {
+    } else if (pathname === "/GreenLegacy/shopSingle.html") {
       Ui.displaySingleShop();
     }
   }
@@ -82,9 +82,9 @@ export class ShoppingCartApi {
 
     Menu.displayShoppingCart();
     const pathname = window.location.pathname;
-    if (pathname === "/zay-shop-demo/buy.html") {
+    if (pathname === "/GreenLegacy/buy.html") {
       Ui.displayBuyPage();
-    } else if (pathname === "/zay-shop-demo/shopSingle.html") {
+    } else if (pathname === "/GreenLegacy/shopSingle.html") {
       Ui.displaySingleShop();
     }
   }

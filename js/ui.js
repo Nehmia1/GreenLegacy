@@ -193,11 +193,15 @@ class Ui {
     const shopSingleError = document.querySelector(".shop-single .error");
 
     const colorInputChecked = document.querySelector(
-      '.shop-single input[name="color"]:checked'
+      '.shop-single input[name="color"]'
     );
+
     const sizeInputChecked = document.querySelector(
-      '.shop-single input[name="size"]:checked'
+      '.shop-single input[name="size"]'
     );
+
+    colorInputChecked.checked = true;
+    sizeInputChecked.checked = true;
 
     const product = ProductsApi.getOneProductOfProducts(item.id);
 
@@ -293,51 +297,7 @@ class Ui {
                 <img src=${product.url[7]} alt="product single">
                 <img src=${product.url[8]} alt="product single">
             </div>
-            <div class="shop-single-nav-slider">
-                <div class="shop-single-nav-slider-inner">
-                    <div>
-                        <input type="radio" name="nav slide" id="nav-slide1" checked>
-                        <input type="radio" name="nav slide" id="nav-slide2">
-                        <input type="radio" name="nav slide" id="nav-slide3">
-                        <div class="nav-slider-img nav-slider-img-1">
-                            <label class="label-slide" for="slide1">
-                                <img src=${product.url[0]} alt="product single">
-                            </label>
-                            <label class="label-slide" for="slide2">
-                                <img src=${product.url[1]} alt="product single">
-                            </label>
-                            <label class="label-slide" for="slide3">
-                                <img src=${product.url[2]} alt="product single">
-                            </label>
-                        </div>
-                        <div class="nav-slider-img">
-                            <label class="label-slide" for="slide4">
-                                <img src=${product.url[3]} alt="product single">
-                            </label>
-                            <label class="label-slide" for="slide5">
-                                <img src=${product.url[4]} alt="product single">
-                            </label>
-                            <label class="label-slide" for="slide6">
-                                <img src=${product.url[5]} alt="product single">
-                            </label>
-                        </div>
-                        <div class="nav-slider-img">
-                            <label class="label-slide" for="slide7">
-                                <img src=${product.url[6]} alt="product single">
-                            </label>
-                            <label class="label-slide" for="slide8">
-                                <img src=${product.url[7]} alt="product single">
-                            </label>
-                            <label class="label-slide" for="slide9">
-                                <img src=${product.url[8]} alt="product single">
-                            </label>
-                        </div>
-                        <label class="label-nav-slide label-nav1" for="nav-slide1"></label>
-                        <label class="label-nav-slide label-nav2" for="nav-slide2"></label>
-                        <label class="label-nav-slide label-nav3" for="nav-slide3"></label>
-                    </div>
-    
-                </div>
+           
     
             </div>
         </div>
@@ -366,11 +326,11 @@ class Ui {
     
                 <div class="color-size-quantity">
                     <div class="color">
-                        <h4>Color : </h4>
+                       
                         <div></div>
                     </div>
                     <div class="size">
-                        <h4>Size : </h4>
+                      
                         <div></div>
                     </div>
     
@@ -416,7 +376,7 @@ class Ui {
       result += `<input class="color-input" type="radio" name="color" id="color${
         i + 1
       }" value="${productColor[i]}">
-                <label for="color${i + 1}" class="btn btn-primary">${
+                <label for="color${i + 1}" class="btn-remove">${
         productColor[i]
       }</label>`;
       div.innerHTML = result;
@@ -431,7 +391,7 @@ class Ui {
       result += `<input class="size-input" type="radio" name="size" id="size${
         i + 1
       }" value="${productSize[i]}">
-                    <label for="size${i + 1}" class="btn btn-primary">${
+                    <label for="size${i + 1}" class="btn-remove">${
         productSize[i]
       }</label>`;
       div.innerHTML = result;
