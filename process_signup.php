@@ -2,7 +2,7 @@
 <?php
 // Connect to the database
 $host = "localhost";  // Your database host
-$dbname = "myloginapp";  // Your database name
+$dbname = "green_legacy";  // Your database name
 $username = "root";  // Your database username
 $password = "";  // Your database password
 
